@@ -17,7 +17,6 @@
  * See Also:
  */
 
-using GOFLibrary.Maze;
 using System;
 
 namespace BuilderGOF
@@ -37,7 +36,12 @@ namespace BuilderGOF
             MazeGame mazeGame = new MazeGame();
             var maze = mazeGame.CreateMaze(new StandardMazeBuilder());
 
-
+            Console.WriteLine("Building the Maze using CountingMazeBuilder.");
+            mazeGame = new MazeGame();
+            var countingMazeBuilder = new CountingMazeBuilder();
+            maze = mazeGame.CreateMaze(countingMazeBuilder);
+            countingMazeBuilder.GetCounts(out int rooms, out int doors);
+            Console.WriteLine($"The maze has {rooms} rooms and {doors} doors");
         }
     }
 }
