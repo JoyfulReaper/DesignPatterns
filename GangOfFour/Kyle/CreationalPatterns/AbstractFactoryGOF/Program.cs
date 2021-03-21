@@ -39,6 +39,10 @@ namespace AbstractFactoryGOF
             Console.WriteLine("Creating Maze using EnchantedMazeFactory");
             mazeGame = new MazeGame();
             maze = mazeGame.CreateMaze(new EnchantedMazeFactory());
+
+            Console.WriteLine("Creating Maze using BombedMazeFactory");
+            mazeGame = new MazeGame();
+            maze = mazeGame.CreateMaze(new BombedMazeFactory());
         }
     }
 }
