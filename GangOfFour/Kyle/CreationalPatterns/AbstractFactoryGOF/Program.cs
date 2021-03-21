@@ -19,13 +19,26 @@
 
 using System;
 
-namespace AbstractFactory
+namespace AbstractFactoryGOF
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ConsoleColor org = Console.ForegroundColor;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Design Pattern Demos: Traditional Gang of Four Examples: Creational Design Patterns: Abstract Factory");
+            Console.WriteLine("https://github.com/JoyfulReaper\n");
+            Console.ForegroundColor = org;
+
+            Console.WriteLine("Creating Maze using MazeFactory");
+            MazeGame mazeGame = new MazeGame();
+            var maze = mazeGame.CreateMaze(new MazeFactory());
+
+            Console.WriteLine("Creating Maze using EnchantedMazeFactory");
+            mazeGame = new MazeGame();
+            maze = mazeGame.CreateMaze(new EnchantedMazeFactory());
         }
     }
 }
