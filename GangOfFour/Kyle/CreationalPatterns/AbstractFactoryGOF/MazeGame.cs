@@ -1,16 +1,13 @@
 ﻿using GOFLibrary.Maze;
 using GOFLibrary.Maze.MapSite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+// Example of creating a Maze using the Abstract Factory Pattern
 
 namespace AbstractFactoryGOF
 {
     public class MazeGame
     {
-        Maze CreateMaze (MazeFactory factory)
+        public Maze CreateMaze (MazeFactory factory)
         {
             Maze maze = factory.MakeMaze();
             Room r1 = factory.MakeRoom(1);

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GOFLibrary.Maze.MapSite
 {
     public class Room : MapSite
     {
         public int RoomNum { get; private set; }
-        MapSite[] _sides = new MapSite[5];
+        MapSite[] _sides = new MapSite[4];
 
         public Room(int roomNo)
         {

@@ -1,12 +1,11 @@
 ﻿using GOFLibrary.Maze.MapSite;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GOFLibrary.Maze
 {
+    // The traditional/old way of doing it
+    // Abstract Factroy Pattern attempts to improve on this
+    // We don't want to hard code the concrete classes here.
+
     public class MazeGame
     {
         public Maze CreateMaze()
