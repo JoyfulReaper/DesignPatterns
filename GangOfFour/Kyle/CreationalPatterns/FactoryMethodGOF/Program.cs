@@ -35,6 +35,14 @@ namespace FactoryMethodGOF
             Console.WriteLine("Building the Maze using MazeGame");
             MazeGame mazeGame = new MazeGame();
             var maze = mazeGame.CreateMaze();
+
+            Console.WriteLine("Building the Maze using BombedMazeGame");
+            mazeGame = new BombedMazeGame();
+            maze = mazeGame.CreateMaze();
+
+            Console.WriteLine("Building the Maze using EnchantedMazeGame");
+            mazeGame = new EnchantedMazeGame();
+            maze = mazeGame.CreateMaze();
         }
     }
 }
