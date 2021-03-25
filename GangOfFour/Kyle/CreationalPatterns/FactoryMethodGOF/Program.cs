@@ -1,10 +1,10 @@
 ﻿/*
- * Builder Demo from the GOF Design Patter Book (97)
+ * Factory Method Demo from the GOF Design Patter Book (107)
  * 
  * Intent: Define an interface for creating an object, but let subclasses decide which class to instanties. 
  * Factory Method lets a class defer instranation to subclasses.
  * 
- * Also know as:
+ * Also known as:
  * Virtual Constructor
  * 
  * Participants:

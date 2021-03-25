@@ -1,10 +1,10 @@
 ﻿/*
  * Builder Demo from the GOF Design Patter Book (97)
  * 
- * Intent: Seperate the construction of a complext object from its representation
+ * Intent: Separate the construction of a complex object from its representation
  * so that the same construction process can create different representations
  * 
- * Also know as:
+ * Also known as:
  * 
  * Participants:
  * Builder (MazeBuilder): Specifies an abstract interface for creating parts of a product object
