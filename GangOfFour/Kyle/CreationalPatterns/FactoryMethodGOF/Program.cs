@@ -8,11 +8,11 @@
  * Virtual Constructor
  * 
  * Participants:
- * Product: Defines the interface of objects the factory method creates.
- * ConcreteProduct: Implements the product interface
- * Creater: Declares the factory method, which returns an object of type Product. Creator may also define a default implementation
+ * Product (MapSite): Defines the interface of objects the factory method creates.
+ * ConcreteProduct (Room): Implements the product interface
+ * Creater (MazeGame): Declares the factory method, which returns an object of type Product. Creator may also define a default implementation
  * of the factory method that returns a default ConcreteProduct object.
- * ConcereteCreator: overrides the factory method to return an instance of ConcreteProduct.
+ * ConcereteCreator (EnchantedMazeGame): overrides the factory method to return an instance of ConcreteProduct.
  * 
  * See Also:
  */
