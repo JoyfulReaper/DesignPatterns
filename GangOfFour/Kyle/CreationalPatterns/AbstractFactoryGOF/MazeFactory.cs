@@ -1,6 +1,8 @@
 ﻿using GOFLibrary.Maze;
 using GOFLibrary.Maze.MapSite;
 
+// This class is a collection of Factory Methods
+
 namespace AbstractFactoryGOF
 {
     public class MazeFactory

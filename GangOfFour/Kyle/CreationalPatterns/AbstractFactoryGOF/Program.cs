@@ -2,9 +2,9 @@
  * Abstract Factory Demo from the GOF Design Patter Book (87)
  * 
  * Intent: Provide an interface for creating families of related 
- * or dependant objects without specifing their concrete classes
+ * or dependent objects without specifying their concrete classes
  * 
- * Also know as: Kit
+ * Also known as: Kit
  * 
  * Participants:
  * AnstractFactory (MazeFactory): Interface for operations that create abstract product objects
