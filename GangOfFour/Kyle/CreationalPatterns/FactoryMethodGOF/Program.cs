@@ -17,6 +17,8 @@
  * See Also:
  */
 
+using GOFLibrary.Maze.BombedMazeSite;
+using GOFLibrary.Maze.MapSite;
 using System;
 
 namespace FactoryMethodGOF
@@ -43,6 +45,11 @@ namespace FactoryMethodGOF
             Console.WriteLine("Building the Maze using EnchantedMazeGame");
             mazeGame = new EnchantedMazeGame();
             maze = mazeGame.CreateMaze();
+
+            Console.WriteLine("Using the generic wall factory");
+            var factory = new GenericCeator();
+            var wall = factory.CreateWall<Wall>();
+            wall = factory.CreateWall<BombedWall>();
         }
     }
 }
