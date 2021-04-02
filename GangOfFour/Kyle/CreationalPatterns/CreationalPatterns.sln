@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GOFLibrary", "GOFLibrary\GO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderGOF", "BuilderGOF\BuilderGOF.csproj", "{BB3BCB68-3307-408E-A644-9A9B0B6232E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodGOF", "FactoryMethodGOF\FactoryMethodGOF.csproj", "{89CB773C-7A05-4741-8B0A-5A9EBAA41FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodGOF", "FactoryMethodGOF\FactoryMethodGOF.csproj", "{89CB773C-7A05-4741-8B0A-5A9EBAA41FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeGOF", "PrototypeGOF\PrototypeGOF.csproj", "{95E22E8E-4B55-4030-9DB4-9753089A3041}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{89CB773C-7A05-4741-8B0A-5A9EBAA41FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89CB773C-7A05-4741-8B0A-5A9EBAA41FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89CB773C-7A05-4741-8B0A-5A9EBAA41FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E22E8E-4B55-4030-9DB4-9753089A3041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E22E8E-4B55-4030-9DB4-9753089A3041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E22E8E-4B55-4030-9DB4-9753089A3041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E22E8E-4B55-4030-9DB4-9753089A3041}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
