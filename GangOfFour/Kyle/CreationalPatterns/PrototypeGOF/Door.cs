@@ -10,6 +10,12 @@ namespace PrototypeGOF
 
         public Door() { }
 
+        public Door(Room r1, Room r2)
+        {
+            _room1 = r1;
+            _room2 = r2;
+        }
+
         public Door(Door other)
         {
             _room1 = other._room1;

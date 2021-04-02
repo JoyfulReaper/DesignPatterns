@@ -52,7 +52,7 @@ namespace PrototypeGOF
             Console.WriteLine("Creating Bombed Maze from prototypes.");
             game = new MazeGame();
             MazePrototypeFactory bombedMazeFactory = new MazePrototypeFactory(
-                new Maze(), new Wall(), new Room(), new Door()
+                new Maze(), new BombedWall(), new RoomWithABomb(), new Door()
                 );
 
             maze = game.CreateMaze(bombedMazeFactory);

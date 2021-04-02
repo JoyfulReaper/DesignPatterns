@@ -1,5 +1,4 @@
-﻿using GOFLibrary.Maze.MapSite;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace PrototypeGOF
@@ -13,6 +12,11 @@ namespace PrototypeGOF
         public Maze(Maze other)
         {
 
+        }
+
+        public virtual Maze Clone()
+        {
+            return new Maze(this);
         }
 
         public void AddRoom(Room room)

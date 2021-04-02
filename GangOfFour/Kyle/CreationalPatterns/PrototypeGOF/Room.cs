@@ -9,11 +9,23 @@ namespace PrototypeGOF
 
         public Room() {}
 
+        public Room(int roomNo)
+        {
+            RoomNum = roomNo;
+        }
+
         public Room(Room other)
         {
             for(int i =0; i < other._sides.Length; i++)
             {
-                //TODO: deep copy... too tired now
+                if(other._sides[i] is Wall)
+                {
+                    _sides[i] = new Wall();
+                }
+                else if(other._sides[i] is Door)
+                {
+                    _sides[i] = new Door();
+                }
             }
 
             RoomNum = other.RoomNum;
@@ -22,6 +34,11 @@ namespace PrototypeGOF
         public virtual void Initialize(int roomNo)
         {
             RoomNum = roomNo;
+        }
+
+        public virtual Room Clone()
+        {
+            return new Room(this);
         }
 
         public MapSite GetSide(Direction direction)
