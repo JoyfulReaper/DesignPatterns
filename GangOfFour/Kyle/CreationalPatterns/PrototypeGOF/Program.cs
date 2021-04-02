@@ -1,5 +1,5 @@
 ﻿/**
-Prototype Method Demo from the GOF Design Patter Book (117)
+Prototype Demo from the GOF Design Patter Book (117)
 
 Intent: 
 Specify the kinds of objects to create using a prototypical instance, and
