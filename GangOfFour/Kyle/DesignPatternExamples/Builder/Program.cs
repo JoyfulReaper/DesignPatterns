@@ -29,7 +29,7 @@ SOFTWARE.
  * 
  * Participants:
  * Builder (IPizzaBuilder): Specifies an abstract interface for creating parts of a product object
- * ConcreteBuilder (VeganPizzaBuilder): Constructs and assembles parts of the product by implementing the builder interface
+ * ConcreteBuilder (VeganPizzaBuilder, SpicyHawaiianPizzaBuilder): Constructs and assembles parts of the product by implementing the builder interface
  * Director (PizzaChef): Constructs an object using the Builder interface
  * Product(Pizza): Represents the complex object under construction. ConcreateBuilder builds the product's internal
  * representation and define the process by which it is assembled.
