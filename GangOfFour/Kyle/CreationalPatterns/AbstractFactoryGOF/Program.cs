@@ -34,7 +34,7 @@ namespace AbstractFactoryGOF
 
             Console.WriteLine("Creating Maze using MazeFactory");
             MazeGame mazeGame = new MazeGame();
-            var maze = mazeGame.CreateMaze(new MazeFactory());
+            var maze = mazeGame.CreateMaze(MazeFactory.Instance());
 
             Console.WriteLine("Creating Maze using EnchantedMazeFactory");
             mazeGame = new MazeGame();

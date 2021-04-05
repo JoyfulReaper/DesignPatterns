@@ -9,6 +9,23 @@ namespace AbstractFactoryGOF
 {
     public class MazeFactory
     {
+        private static MazeFactory _instance;
+
+        protected MazeFactory()
+        {
+
+        }
+
+        public static MazeFactory Instance()
+        {
+            if (_instance == null)
+            {
+                _instance = new MazeFactory();
+            }
+
+            return _instance;
+        }
+
         public virtual Maze MakeMaze()
         {
             return new Maze();
