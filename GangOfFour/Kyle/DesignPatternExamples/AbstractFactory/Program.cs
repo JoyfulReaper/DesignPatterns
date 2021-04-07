@@ -47,6 +47,12 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
+            ConsoleColor org = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Design Pattern Demos: Updated Gang of Four Examples: Creational Design Patterns: Abstract Factory");
+            Console.WriteLine("https://github.com/JoyfulReaper\n");
+            Console.ForegroundColor = org;
+
             IAnimalFactory factory = new DogFactory();
 
             IAnimal a1 = factory.MakeAnimal();
